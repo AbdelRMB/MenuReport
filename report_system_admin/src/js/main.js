@@ -1,5 +1,5 @@
 new Vue({
-    el: '#app', // Cibler l'élément avec l'ID `app`
+    el: '#app', 
     data: {
         menuOpen: false,
         activeReports: [],
@@ -17,7 +17,7 @@ new Vue({
                 this.closeMenu();
             } else {
                 this.openMenu();
-                this.createMenuStructure(); // Créer la structure du menu
+                this.createMenuStructure();
             }
         },
         openMenu() {
@@ -27,6 +27,7 @@ new Vue({
                     'Content-Type': 'application/json'
                 }
             }).then(() => {
+                console.log("J'ouvre")
                 this.menuOpen = true;
                 document.body.style.display = 'flex';
             }).catch(err => console.error('Error opening menu:', err));
@@ -237,6 +238,7 @@ new Vue({
         window.addEventListener('message', (event) => {
             if (event.data.action === 'openMenu') {
                 this.handleReportData(event.data.reports);
+                this.toggleMenu();
             }
         });
     }

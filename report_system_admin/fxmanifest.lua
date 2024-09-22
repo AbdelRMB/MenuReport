@@ -19,5 +19,6 @@ ui_page 'src/index.html'
 files {
     'src/index.html',
     'src/js/main.js',
-    'src/style/main.css'
+    'src/style/main.css',
+    'src/style/Bourgeois-Bold.ttf'
 }
