@@ -1,0 +1,427 @@
+@font-face {
+    font-family: 'bourgeoisBold';
+    src: url("Bourgeois-Bold.ttf") format("truetype"),
+        url("Bourgeois-Bold.woff") format("woff"),
+        url("Bourgeois-Bold.woff2") format("woff2");
+    font-weight: bold;
+    font-style: normal;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'bourgeoisBold';
+    font-weight: bold;
+}
+
+.menuContainer {
+    width: 20%;
+    max-width: 20%;
+    border-radius: 10px;
+    position: fixed;
+    top: 7%;
+    left: 7%;
+    height: 60%;
+    max-height: 60%;
+}
+
+.section {
+    background-color: #00000070;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    padding: 10px 0px;
+}
+
+#reportsSection {
+    margin-bottom: 20px;
+}
+
+.reportCategory {
+    font-size: 0.7em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.reportCategory1 {
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.reportList {
+    max-height: 150px;
+    overflow-y: auto;
+    border-radius: 5px;
+    padding: 0 5px;
+}
+
+#reportDetails p::-webkit-scrollbar {
+    width: 8px;
+}
+
+#reportDetails p::-webkit-scrollbar-track {
+    background: #000000;
+    border-radius: 10px;
+}
+
+#reportDetails p::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+}
+
+.reportItem {
+    padding: 5px 7px;
+    margin: 3px 0;
+    background-color: #00000081;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-size: 0.7em;
+}
+
+.reportItem:first-child {
+    margin-top: 0;
+}
+
+.reportItem:last-child {
+    margin-bottom: 0;
+}
+
+.reportItem:hover {
+    background-color: #753FA1;
+}
+
+.selected {
+    background-color: #753FA1;
+}
+
+.reportItem:last-child {
+    border-bottom: none;
+}
+
+.reportPlayer {
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.reportTime {
+    color: #aaa;
+    font-size: 0.9em;
+}
+
+.reportMessage {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+#onlineStatus {
+    margin-top: 20px;
+    font-size: 1em;
+}
+
+#closeBtn {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #d9534f;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+    font-size: 16px;
+    width: 100%;
+}
+
+.reportList::-webkit-scrollbar {
+    width: 8px;
+    /* Largeur de la barre de défilement */
+}
+
+.reportList::-webkit-scrollbar-track {
+    background: #000000;
+    /* Couleur du fond de la barre de défilement */
+    border-radius: 10px;
+}
+
+.reportList::-webkit-scrollbar-thumb {
+    background-color: #ffffff;
+    /* Couleur de la poignée de défilement */
+    border-radius: 10px;
+    border: 2px solid #2c2c2c;
+    /* Espacement autour de la poignée */
+}
+
+.reportmenulist {
+    height: 80%;
+}
+
+#reportDetails {
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 5px;
+    display: none;
+    /* Caché par défaut */
+    height: 20%;
+}
+
+#reportDetails h2 {
+    margin: 0;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+#reportDetails p {
+    margin-top: 5px;
+    max-height: 80px;
+    overflow-y: auto;
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 0.7em;
+        padding: 5px 0px;
+    }
+
+    #reportsSection {
+        margin-bottom: 10px;
+    }
+
+    .reportCategory {
+        font-size: 0.5em;
+    }
+
+    .reportCategory1 {
+        font-size: 0.7em;
+    }
+
+    .reportList {
+        max-height: 80px;
+        padding: 0 2px;
+    }
+
+    .reportItem {
+        padding: 5px 3px;
+        margin: 2px 0;
+        font-size: 0.4em;
+    }
+
+    .reportMessage {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    #onlineStatus {
+        margin-top: 10px;
+        font-size: 0.5em;
+    }
+
+    .reportList::-webkit-scrollbar {
+        width: 5px;
+        /* Largeur de la barre de défilement */
+    }
+
+    #reportDetails {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #reportDetails h2 {
+        margin: 0;
+        font-size: 0.5em;
+    }
+
+    #reportDetails p {
+        margin-top: 5px;
+        font-size: 0.4em;
+        overflow-x: auto;
+        max-height: 50px;
+    }
+
+    #reportDetails p::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-track {
+        background: #000000;
+        border-radius: 10px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #2c2c2c;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 801px) {
+    h1 {
+        font-size: 1em;
+        padding: 5px 0px;
+    }
+
+    #reportsSection {
+        margin-bottom: 10px;
+    }
+
+    .reportCategory {
+        font-size: 0.7em;
+    }
+
+    .reportCategory1 {
+        font-size: 0.8em;
+    }
+
+    .reportList {
+        max-height: 110px;
+        padding: 0 2px;
+    }
+
+    .reportItem {
+        padding: 5px 3px;
+        margin: 2px 0;
+        font-size: 0.5em;
+    }
+
+    .reportMessage {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    #onlineStatus {
+        margin-top: 10px;
+        font-size: 0.6em;
+    }
+
+    .reportList::-webkit-scrollbar {
+        width: 5px;
+        /* Largeur de la barre de défilement */
+    }
+
+    #reportDetails {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #reportDetails h2 {
+        margin: 0;
+        font-size: 0.6em;
+    }
+
+    #reportDetails p {
+        margin-top: 5px;
+        font-size: 0.5em;
+        max-height: 70px;
+        overflow-x: auto;
+    }
+
+
+    #reportDetails p::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-track {
+        background: #000000;
+        border-radius: 10px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #2c2c2c;
+    }
+}
+
+@media screen and (max-width: 1153px) and (min-width: 1025px) {
+    h1 {
+        font-size: 1em;
+        padding: 5px 0px;
+    }
+
+    #reportsSection {
+        margin-bottom: 10px;
+    }
+
+    .reportCategory {
+        font-size: 0.7em;
+    }
+
+    .reportCategory1 {
+        font-size: 0.8em;
+    }
+
+    .reportList {
+        max-height: 140px;
+        padding: 0 2px;
+    }
+
+    .reportItem {
+        padding: 5px 3px;
+        margin: 2px 0;
+        font-size: 0.5em;
+    }
+
+    .reportMessage {
+        padding: 5px;
+        margin-top: 5px;
+    }
+
+    #onlineStatus {
+        margin-top: 10px;
+        font-size: 0.6em;
+    }
+
+    .reportList::-webkit-scrollbar {
+        width: 5px;
+        /* Largeur de la barre de défilement */
+    }
+
+    #reportDetails {
+        margin-top: 10px;
+        padding: 10px;
+    }
+
+    #reportDetails h2 {
+        margin: 0;
+        font-size: 0.6em;
+    }
+
+    #reportDetails p {
+        margin-top: 5px;
+        font-size: 0.5em;
+        max-height: 70px;
+        overflow-x: auto;
+    }
+
+
+    #reportDetails p::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-track {
+        background: #000000;
+        border-radius: 10px;
+    }
+
+    #reportDetails p::-webkit-scrollbar-thumb {
+        background-color: #ffffff;
+        border-radius: 10px;
+        border: 2px solid #2c2c2c;
+    }
+}
